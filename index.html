@@ -23,10 +23,18 @@ Description: Demonstrates how to create a navigation bar along with a dropdown m
 Date retrieved: Wednesday, November 12, 2025
 -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kedebideri:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
     <style>
       html {
         font-size: 16px;
-        /* change ems */
       }
 
       body {
@@ -47,6 +55,7 @@ Date retrieved: Wednesday, November 12, 2025
 
       li {
         margin: auto;
+        line-height: 2.2em;
       }
 
       li.logo {
@@ -60,6 +69,11 @@ Date retrieved: Wednesday, November 12, 2025
         text-align: center;
         padding: 20px 10px;
         text-decoration: none;
+      }
+
+      ul li a,
+      ul .dropbtn {
+        font-family: "Open Sans", sans-serif;
       }
 
       li.dropdown {
@@ -152,12 +166,12 @@ Date retrieved: Wednesday, November 12, 2025
         font-size: 1.5em;
         padding: 7% 4%;
       }
-      
+
       .half-left h3 {
-  font-size: 2.5em;
-  margin: 3% 0 2% 0; 
-  text-align: center;
-}
+        font-size: 2.5em;
+        margin: 3% 0 2% 0;
+        text-align: center;
+      }
 
       .half-right {
         width: 50%;
@@ -167,145 +181,151 @@ Date retrieved: Wednesday, November 12, 2025
         text-align: center;
         padding: 3%;
       }
-      
+
       .left {
         text-align: left;
         margin-left: 25px;
         line-height: 1.5;
       }
-      
+
       p {
         font-size: .8em;
         text-align: left;
         margin-left: 30px;
       }
-      
-      h1, h2 {
+
+      h1,
+      h2 {
         text-align: center;
       }
-      
-       iframe {
+
+      iframe {
         display: block;
-        margin: auto; 
+        margin: auto;
       }
-      
+
       .width {
         width: 1200px;
         margin: auto;
       }
-    
+
+      p,
+      h2,
+      li {
+        font-family: "Kedebideri", sans-serif;
+      }
     </style>
   </head>
   <body>
     <div class="width">
       <ul>
-      <li class="logo"><a href="https://sydney-yee21.github.io/Home/"><img src="Logo.png" alt="Sydney Yee" style="width:120px; height:50px;"></a></li>
-      <li><a href="https://sydney-yee21.github.io/Home/">Home</a></li>
-      <li><a href="https://sydney-yee21.github.io/About/">About</a></li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn"><b>Projects</b></a>
-        <div class="dropdown-content">
-          <a href="https://sydney-yee21.github.io/Videography/">Videography</a>
-          <a href="https://sydney-yee21.github.io/Service-Design/"><b>Service Design</b></a>
-          <a href="https://sydney-yee21.github.io/Website-Redesign/">Website Redesign</a>
+        <li class="logo"><a href="https://sydney-yee21.github.io/Home/"><img src="Logo.png" alt="Sydney Yee" style="width:120px; height:50px;"></a></li>
+        <li><a href="https://sydney-yee21.github.io/Home/">Home</a></li>
+        <li><a href="https://sydney-yee21.github.io/About/">About</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn"><b>Projects</b></a>
+          <div class="dropdown-content">
+            <a href="https://sydney-yee21.github.io/Videography/">Videography</a>
+            <a href="https://sydney-yee21.github.io/Service-Design/"><b>Service Design</b></a>
+            <a href="https://sydney-yee21.github.io/Website-Redesign/">Website Redesign</a>
+          </div>
+        </li>
+        <li><a href="https://sydney-yee21.github.io/Resume/">Resume</a></li>
+        <li><a href="https://sydney-yee21.github.io/Contact/">Contact</a></li>
+      </ul>
+
+      <div class="half-left">
+        <img src="game.png" alt="card game with box, cards, instruction pamphlet and customer tag">
+        <img src="cardtitle.png" alt="I Want To Speak To The Manager card game title">
+      </div>
+
+
+
+      <div class="half-right">
+        <h1 style="font-size: 2.5em;">
+          Service Design
+        </h1>
+        <h1 style="font-size: 1.6em;">
+          I Want to Speak to The Manager!
+        </h1>
+
+        <div class="left">
+          <p style="margin-left: 55px;">
+            <li>Designed an educational card game called “I Want To Speak To Your Manager”</li>
+            <li> Teaches real service design concepts through competitive problem-solving</li>
+            <li>Inspired by a Service Design For Business book</li>
+            <li>Contributed to scriptwriting, voiceover, video editing, and card designs</li>
+            <li> Applied colour psychology and clear visual cues in card design to support learning</li>
+          </p>
+
         </div>
-      </li>
-      <li><a href="https://sydney-yee21.github.io/Resume/">Resume</a></li>
-      <li><a href="https://sydney-yee21.github.io/Contact/">Contact</a></li>
-    </ul>
+      </div>
 
-    <div class="half-left">
-      <img src="game.png" alt="card game with box, cards, instruction pamphlet and customer tag">
-      <img src="cardtitle.png" alt="I Want To Speak To The Manager card game title">
-    </div>
+      <div class="fullwidth">
+        <img src="line.png" alt="diagonal black line" style="width:100%;">
+      </div>
 
+      <div class="content">
+        <div class="half-left">
+          <h1>
+            Game Requirements
+          </h1>
+          <p>
+            <b>Format:</b> Card-based educational game
+          </p>
+          <p>
+            <b>Duration:</b> 30-45 minutes of gameplay
+          </p>
+          <p>
+            <b>Complexity:</b> Rules must be learnable in 5-10 minutes
+          </p>
+          <p>
+            <b>Replayability:</b> Must work without original creators present
+          </p>
+        </div>
+        <div class="half-right">
+          <h2>
+            Cards Brainstorming
+          </h2>
+          <img src="brainstorm.png" alt="card game brainstorm designs" style="width:100%">
+        </div>
+      </div>
 
+      <div class="fullwidth">
+        <img src="line.png" alt="diagonal black line" style="width:100%;">
+      </div>
 
-    <div class="half-right">
-      <h1>
-        Service Design
+      <h1 style="font-size: 3em;">
+        Knowledge Exchange V1
       </h1>
+
       <h2>
-        I Want to Speak to The Manager!
+        Game Summary, Instructions, Design Elements and Game Outcomes
       </h2>
 
-      <div class="left">
-        <p style="margin-left: 55px;">
-          <li>Designed an educational card game called “I Want To Speak To Your Manager”</li>
-          <li> Teaches real service design concepts through competitive problem-solving</li>
-          <li>Inspired by a Service Design For Business book</li>
-          <li>Contributed to scriptwriting, voiceover, video editing, and card designs</li>
-          <li> Applied colour psychology and clear visual cues in card design to support learning</li>
-        </p>
+      <iframe width="745" height="420" src="https://www.youtube.com/embed/GumADSGqWE8?si=WVvsitof5c_qpkQe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+      <div class="fullwidth">
+        <img src="line.png" alt="diagonal black line" style="width:100%;">
       </div>
+
+      <h1 style="font-size: 3em;">
+        Knowledge Exchange V2
+      </h1>
+
+      <h2>
+        Addition of our team playing the game
+      </h2>
+
+      <iframe width="745" height="420" src="https://www.youtube.com/embed/qBF0ntPV86s?si=DIHpKCVKdp-T8JFp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <div class="fullwidth">
+        <img src="line.png" alt="diagonal black line" style="width:100%;">
+      </div>
+
     </div>
 
-    <div class="fullwidth">
-      <img src="line.png" alt="diagonal black line" style="width:100%;">
-    </div>
 
-    <div class="content">
-      <div class="half-left">
-        <h2>
-          Game Requirements
-        </h2>
-        <p>
-          <b>Format:</b> Card-based educational game
-        </p>
-        <p>
-          <b>Duration:</b> 30-45 minutes of gameplay
-        </p>
-        <p>
-        <b>Complexity:</b> Rules must be learnable in 5-10 minutes
-        </p>
-        <p>
-          <b>Replayability:</b> Must work without original creators present
-        </p>
-      </div>
-       <div class="half-right">
-        <h2>
-          Cards Brainstorming
-        </h2>
-         <img src="brainstorm.png" alt="card game brainstorm designs" style="width:100%">
-      </div>
-    </div>
-    
-        <div class="fullwidth">
-      <img src="line.png" alt="diagonal black line" style="width:100%;">
-    </div>
-    
-    <h1>
-      Knowledge Exchange V1
-    </h1>
-    
-    <h2>
-     Game Summary, Instructions, Design Elements and Game Outcomes
-    </h2>
- 
-<iframe width="745" height="420" src="https://www.youtube.com/embed/GumADSGqWE8?si=WVvsitof5c_qpkQe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-     <div class="fullwidth">
-      <img src="line.png" alt="diagonal black line" style="width:100%;">
-    </div>
-     
-     <h1>
-      Knowledge Exchange V2
-    </h1>
-    
-    <h2>
-     Addition of our team playing the game
-    </h2>
- 
-<iframe width="745" height="420" src="https://www.youtube.com/embed/qBF0ntPV86s?si=DIHpKCVKdp-T8JFp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-     <div class="fullwidth">
-      <img src="line.png" alt="diagonal black line" style="width:100%;">
-    </div>
-   
-    </div>
-    
-      
 
 
   </body>
